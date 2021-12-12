@@ -1,9 +1,11 @@
 /* eslint-disable */ 
 <template>
-<div>
-  <button @click="loginPage()" class="button is-success">Login</button>
-  <button @click="registerPage()" class="button is-success">Register</button>
-  <div class="columns">
+<div id="login">
+  <div class="buttons">
+    <button @click="loginPage()" class="button is-success">Login</button>
+    <button @click="registerPage()" class="button is-success">Register</button>
+  </div>
+  <div></div>
     <div class="column is-half is-offset-one-quarter">
       <div class="card">
         <div class="card-content">
@@ -60,7 +62,7 @@
       </div>
     </div>
   </div>
-  </div>
+
 </template>
 
 <script>
@@ -141,3 +143,11 @@ export default {
   },
 };
 </script>
+
+<style>
+  #login {
+  margin:auto; }
+  button {
+    width:15%;
+  }
+</style>

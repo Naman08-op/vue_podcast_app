@@ -2,9 +2,6 @@
   <div>
     HELLO<br />
     {{ title }} <br />
-    {{ this.started_at }} <br />
-    {{ this.ownerUID }}<br />
-    {{ this.name }} <br>
     <p>{{formattedElapsedTime}}</p>
     <button @click="leave()" class="button is-link">Leave</button>
   </div>

@@ -2,6 +2,8 @@
   <div>
     Podcast HOME
     <br />
+        <button @click="logout()" class="button is-danger">Logout</button>
+
     <br />
     <input
       class="input is-link"
@@ -43,6 +45,15 @@ export default {
       else{
         window.alert('Tick the box to go live')
       }
+    },
+    async logout(){
+        await this.$store.dispatch("logout")
+        console.log(this.$store.getters.getsessiontitle)
+        console.log(this.$store.getters.getuserId)
+        console.log(this.$store.getters.getEmail)
+        console.log(this.$store.getters.getPodcaster)
+        console.log(this.$store.getters.getName)
+        this.$router.push("/login")
     }
   }
 };

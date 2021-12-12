@@ -1,8 +1,9 @@
 <template>
-<div>
+<div id="register">
+  <div class="buttons">
   <button @click="loginPage()" class="button is-success">Login</button>
   <button @click="registerPage()" class="button is-success">Register</button>
-  
+  </div>
   <div class="columns">
     <div class="column is-half is-offset-one-quarter">
       <div class="card">
@@ -133,3 +134,11 @@ export default {
   }
 };
 </script>
+
+<style>
+  #register {
+  margin:auto; }
+  button {
+    width:15%;
+  }
+</style>

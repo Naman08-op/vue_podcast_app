@@ -2,10 +2,12 @@
 <template>
   <div >
       {{title}}<br>{{name}}
+      <br>  
+      <p>{{formattedElapsedTime}}</p>
     <button @click="startPodcast" class="button is-success">Start</button>
     <button @click="stop" class="button is-danger">Stop</button>
     <button @click="endPodcast" class="button is-link">END PODCAST</button>
-    <p>{{formattedElapsedTime}}</p>
+    
   </div> 
 </template>
 
